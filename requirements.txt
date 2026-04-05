@@ -8,7 +8,8 @@ seaborn
 catboost
 xgboost
 mlflow
-
+load-dotenv
+dataclasses
 
 # this below line direct trigger to setup.py file so comment it or if you wamnt to uncomment it then handle this on setup.py
 #-e .
