@@ -24,6 +24,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         try:
             ##reading the data from mysql
+            df=read_sql_data()
             df=pd.read_csv(os.path.join('notebook/data','raw.csv'))
             logging.info("Reading completed mysql database")
 
@@ -39,8 +40,6 @@ class DataIngestion:
             return(
                 self.ingestion_config.train_data_path,
                 self.ingestion_config.test_data_path
-
-
             )
 
 
